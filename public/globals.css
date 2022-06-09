@@ -1,0 +1,9 @@
+body {
+  background-image: linear-gradient(90deg, #2193b0, #6dd5ed);
+  background-attachment: fixed;
+}
+h1,
+h3 {
+  text-align: center;
+  padding-top: 50px;
+}

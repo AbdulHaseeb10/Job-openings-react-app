@@ -1,0 +1,25 @@
+.col {
+  list-style: none;
+  padding: 50px;
+  margin-top: 100px;
+  border: 2px solid rgb(173, 209, 221);
+  font-size: large;
+}
+.row {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+}
+.profile {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.profile-pic {
+  border-radius: 50%;
+}
+.userDetails {
+  list-style: none;
+}
