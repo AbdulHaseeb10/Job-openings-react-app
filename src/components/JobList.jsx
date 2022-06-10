@@ -7,7 +7,7 @@ function JobList() {
   const [items, setItems] = useState([]);
   const [dataLoaded, setDataLoaded] = useState(false);
 
-  fetch("http://refertest.pythonanywhere.com/job/openings")
+  fetch(process.env.JOB_OPENINGS)
     .then((res) => res.json())
     .then((json) => {
       setItems(json);

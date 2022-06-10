@@ -5,7 +5,7 @@ import "../App.css";
 function UserData() {
   const [userData, setUserData] = useState("");
   const [dataLoaded, setDataLoaded] = useState(false);
-  fetch("http://refertest.pythonanywhere.com/user/data")
+  fetch(process.env.USER_DATA)
     .then((res) => res.json())
     .then((json) => {
       setUserData(json);
