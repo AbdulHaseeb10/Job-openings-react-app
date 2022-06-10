@@ -7,7 +7,9 @@ function JobList() {
   const [items, setItems] = useState([]);
   const [dataLoaded, setDataLoaded] = useState(false);
 
-  fetch(process.env.JOB_OPENINGS)
+  console.log(process.env);
+
+  fetch(process.env.REACT_APP_JOB_OPENINGS)
     .then((res) => res.json())
     .then((json) => {
       setItems(json);

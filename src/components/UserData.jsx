@@ -5,7 +5,7 @@ import "../App.css";
 function UserData() {
   const [userData, setUserData] = useState("");
   const [dataLoaded, setDataLoaded] = useState(false);
-  fetch(process.env.USER_DATA)
+  fetch(process.env.REACT_APP_USER_DATA)
     .then((res) => res.json())
     .then((json) => {
       setUserData(json);
